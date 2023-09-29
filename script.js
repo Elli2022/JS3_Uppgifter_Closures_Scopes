@@ -1,4 +1,4 @@
-// 1. Write a func.on that allows you to do this:
+// 1. Write a function that allows you to do this:
 
 // var addSix = createBase(6)
 // addSix(10) // 16
@@ -17,7 +17,7 @@ console.log(addSix(18));
 
 //----------------------------------------------------------------
 
-// Create a simple func.on that only run once after been called.
+// Create a simple function that only run once after been called.
 
 function runOnce(fn) {
   let hasRun = false;
@@ -36,10 +36,11 @@ sayHelloOnce();
 
 // 3. Using closures, Create a private counter and a way to print the value of the counter
 // at any desired .me.
-// Tips: A func.on can return several func.ons in the following way:
+// Tips: A function can return several functions in the following way:
 
 function counter() {
   let count = 0;
+
   function increment() {
     count++;
   }
@@ -56,8 +57,8 @@ const myCounter = counter();
 myCounter.increment();
 myCounter.print(); // 1
 
-// 4. Create a func.on that builds a string adding characters/words to it every .me the
-// func.on is called.
+// 4. Create a function that builds a string adding characters/words to it every .me the
+// function is called.
 // Example:
 // 1st .me calling the func.on I add the word: Hello
 // 2nd .me calling the func.on we add the word: world
